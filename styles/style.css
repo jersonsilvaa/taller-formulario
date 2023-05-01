@@ -1,0 +1,209 @@
+@import url('./normalize.css');
+
+:root {
+    --clear-color: #e6edf3;
+    --primary-color: #2f81f7;
+    --background-color: #0d1117;
+    --color-border-muted: #21262d;
+    --color-border-default: #30363d;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    word-wrap: break-word;
+}
+
+.contentLogin {
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    padding-top: 16px;
+    border-bottom: 0;
+    padding-bottom: 24px;
+    background-color: transparent;
+}
+
+.containerLogo {
+    margin-top: 13px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.containerLogo::before {
+    display: table;
+    content: '';
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.containerLogo::after {
+    clear: both;
+    content: '';
+    display: table;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.faviconLogo {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: text-bottom;
+    fill: currentColor;
+    color: var(--clear-color);
+}
+
+.showOnFocus {
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.authForm {
+    width: 340px;
+    margin: 0 auto;
+    padding-left: 16px ;
+    padding-right: 16px;
+}
+
+.authHeader {
+    color: var(--clear-color);
+    border: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-shadow: none;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: 16px;
+    background-color: transparent;
+}
+
+.authHeader h1 {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: -.5px;
+}
+
+.form {
+    border: 1px solid var(--color-border-muted);
+    padding: 16px;
+    font-size: 14px;
+    margin-top: 16px;
+    border-top: 1px solid var(--color-border-muted);
+    border-radius: 6px;
+    background-color: #161b22;
+}
+
+.form label {
+    display: block;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.formControl {
+    color: var(--clear-color);
+    width: 100%;
+    border: 1px solid var(--color-border-default);
+    display: block;
+    padding: 5px 12px;
+    font-size: 14px;
+    margin-top: 4px;
+    box-shadow: 0 0 transparent;
+    transition: 80ms cubic-bezier(.33, 1, .68, 1);
+    line-height: 20px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    background-color: #0d1117;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    transition-property: color, background-color, box-shadow, border-color;
+}
+
+.btn {
+    color: #ffffff;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 6px 15px;
+    font-size: 14px;
+    box-shadow: 0 0 transparent, 0 0 transparent;
+    user-select: none;
+    font-weight: 500;
+    line-height: 20px;
+    white-space: nowrap;
+    margin-top: 16px;
+    text-align: center;
+    appearance: none;
+    transition: 80ms cubic-bezier(.33, 1, .68, 1);
+    border-color: rgba(240, 246, 252, .1);
+    border-radius: 6px;
+    background-color: #238636;
+    transition-property: color, background-color, box-shadow, border-color;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.forgot {
+    top: 0;
+    float: right;
+    right: 0;
+    font-size: 12px;
+}
+
+.createAccount {
+    padding: 16px 16px;
+    text-align: center;
+    border: 1px solid var(--color-border-muted);
+    border-radius: 6px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    font-size: 12px;
+    max-width: 1012px;
+    margin-top: 40px;
+    margin-left: auto;
+    padding-top: 40px;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 40px;
+}
+
+.list {
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+
+.list li {
+    margin-right: 16px;
+}
+
+.list li:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.secondaryLink {
+    color: #7d8590;
+}
+
+.secondaryLink:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

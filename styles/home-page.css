@@ -1,0 +1,222 @@
+@import url('./normalize.css');
+
+body {
+    background-color: #22272e;
+}
+
+.head {
+    color: rgba(205, 217, 229, .7);
+    padding: 0;
+    display: flex;
+    font-size: 14px;
+    height: 60px;
+    flex-wrap: wrap;
+    line-height: 1.5;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: #2d333b;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    align-self: stretch;
+    align-items: center;
+    margin-top: calc(-1 * 4px);
+    margin-right: 16px;
+    margin-bottom: calc(-1 * 4px);
+}
+
+.log {
+    color: #cdd9e5;
+    font-weight: 600;
+    white-space: nowrap;
+    fill: currentColor;
+}
+
+.allContents {
+    width: 100%;
+    flex: auto;
+    flex-wrap: nowrap;
+    align-self: stretch;
+    margin-top: 16px;
+    align-items: center;
+    margin-right: 0;
+    flex-direction: column;
+}
+
+.headerSearch {
+    flex: auto;
+    position: relative;
+    max-width: 100%;
+    align-self: stretch;
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+
+.formControl {
+    min-height: 28px;
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    font-weight: 400;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 20px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-color: #22272e;
+    border: 1px solid #444c56;
+    background-position: right 8px center;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: none;
+    font-size: 14px;
+    color: #adbac7;
+}
+
+.searchInput {
+    display: table-cell;
+    width: 250px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    box-shadow: none;
+}
+
+.searchInput::placeholder {
+    color: #cdd9e5;
+    padding-left: 12px;
+}
+
+.nav {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.itemOption {
+    color: #cdd9e5;
+    white-space: nowrap;
+    border-color: rgba(255, 255, 255, .15);
+    font-weight: 600;
+    margin-top: 12px;
+    margin-right: 14px;
+}
+
+.itemOption:hover {
+    color: #ddd;
+}
+
+.avatar {
+    border-radius: 9999px;
+    background-color: rgba(205, 217, 229, .1);
+    box-shadow: 0 0 0 1px rgba(205, 217, 229, .1);
+    display: inline-block;
+    line-height: 1;
+    overflow: hidden;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.dropdown {
+    border-bottom-color: #0000;
+    border-left-color: #0000;
+    border-right-color: #0000;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    content: '';
+    display: inline-block;
+    height: 0;
+    vertical-align: middle;
+    width: 0;
+    font-weight: 600;
+    color: #cdd9e5;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.dropdownContent {
+    top: 10%;
+    left: 32%;
+    width: 160px;
+    border: 1px solid #444c56;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(205, 217, 229, .1);
+    border-radius: 6px;
+    background-clip: padding-box;
+    background-color: #22272e;
+}
+
+.dropdownContent a {
+    color: #cdd9e5;
+    padding: 12px;
+    display: block;
+}
+
+.dropdownContent a:hover {
+    color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .logo {
+        display: flex;
+    }
+
+    .allContents {
+        order: inherit;
+        display: flex;
+        margin-top: 0;
+        flex-direction: row;
+    }
+
+    .headerSearch {
+        max-width: 272px;
+        align-self: auto;
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
+
+    .nav {
+        align-self: auto;
+        flex-direction: row;
+    }
+
+    .itemOption {
+        border-top: 9;
+        padding-top: 16px;
+        margin-bottom: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+@media (min-width: 1012px) {
+    .head {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .formControl {
+        color: #cdd9e5;
+    }
+}
+
+@media (min-width: 768px) {
+    .head {
+        flex-wrap: nowrap;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
